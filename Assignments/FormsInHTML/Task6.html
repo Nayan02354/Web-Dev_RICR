@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Task-6</title>
+</head>
+<body>
+    
+    <div style="width:500px; padding:30px; border:2px solid black; margin:auto;">  
+    <center> <h2> Doctor Appointment Form </h2> </center>
+
+    <hr color="red">
+
+    Appointment Date: <input type="date"> <br><br>
+    Appointment Time: <input type="time"> <br><br>
+    Name: <input type="text" value="First Name"> <input type="text" value="Last Name">                  <br><br>
+    
+    Gender: <input type="radio" name="gender" id="male">
+    <label for="male"> Male </label>
+
+    <input type="radio" name="gender" id="female">
+    <label for="female"> Female </label> 
+
+    <br><br>
+
+    Phone: <input type="number">
+
+    <br><br>
+
+    Address: 
+    <select name="city" id="city">
+    <option value=""> City </option> 
+    <option value="Bhopal"> Bhopal </option>
+    <option value="Jabalpur"> Jabalpur </option>
+    <option value="Indore"> Indore </option>
+    </select>
+
+    <select name="state" id="state">
+    <option value=""> state </option> 
+    <option value="MP"> Madhya Pradesh </option>
+    <option value="Maharashtra"> Maharashtra </option>
+    <option value="Rajasthan"> Rajasthan </option>
+    </select>
+
+    <br><br>
+
+    Your Query: <textarea name="query" id="query"> </textarea> <br><br>
+
+    Appointment Type: Select which Appoitnment type you require <br>
+    <input type="checkbox" name="appointment">
+    <label for="general"> General Checkup </label>
+
+    <br>
+
+    <input type="checkbox" name="appointment">
+    <label for="Eye"> Eye Checkup </label>
+
+    <br>
+
+    <input type="checkbox" name="appointment">
+    <label for="heart"> Heart Checkup </label>
+
+    <br>
+
+    <input type="checkbox" name="appointment">
+    <label for="hearing"> Hearing Test </label>
+
+    <br><br>
+
+    <button> Send </button>
+    
+
+
+</body>
+</html>
