@@ -7,26 +7,39 @@
 </head>
 <body>
     
-    <div style="width:400px; padding:30px; border:2px solid black; margin:auto;">
+    <div style="width:600px; padding:30px; border:2px solid black; margin:auto;">
     <h1> Pizza Order Form </h1>
 
-    <b> First Name: </b> <input type="text"> <br><br>
-    <b> Last Name: </b> <input type="text"> <br><br>
-    <b> Email Address: </b> <input type="email"> <br><br>
-    <b> Contact Number: </b> <input type="number"> <br><br>
-    <b> Prefered Delivery Date: </b> <input type="date"> <br>
+    <div>
 
-    <h4> Size: </h4>
-    <input type="radio" name="size">
-    <label for="size"> Small </label>
+    <b> <label for="first-name"> First Name: </label> </b> <input type="text" id="first-name"> <br><br>
+    <b> <label for="last-name"> Last Name: </label> </b> <input type="text" id="last-name"> <br><br>
+    <b> <label for="email"> Email Address: </label> </b> <input type="email" id="email"> <br><br>
+    <b> <label for="contact-number"> Contact Number: </label> </b> <input type="number" id="contact-number"> <br><br>
+    <b> <label for="delivery-date"> Prefered Delivery Date: </label> </b> <input type="date" id="delivery-date"> <br>
 
-    <input type="radio" name="size">
-    <label for="size"> Medium </label>
+    </div>
 
-    <input type="radio" name="size">
-    <label for="size"> Large </label>
+    <div>
+
+    <h3> <label for="size">Size: </label> </h3>
+    <input type="radio" name="size" id="small">
+    <label for="small"> Small </label>
+
+    <input type="radio" name="size" id="medium">
+    <label for="medium"> Medium </label>
+
+    <input type="radio" name="size" id="large">
+    <label for="large"> Large </label>
+
+    </div>
+
+    <div>
 
     <h4> Flavour: </h4>
+
+    <div>
+        
     <input type="checkbox" name="Flavour">
     <label for="Flavour"> Hawaiian(Php 150) </label>
 
@@ -37,7 +50,11 @@
         <option value=""> </option>
     </select>
 
+    </div>
+
     <br>
+
+    <div>
 
     <input type="checkbox" name="Flavour">
     <label for="Flavour"> Pepperoni(Php 140) </label>
@@ -49,7 +66,11 @@
         <option value=""> </option>
     </select>
 
+    </div>
+
     <br>
+
+    <div>
 
     <input type="checkbox" name="Flavour">
     <label for="Flavour"> Vegetables(Php 130) </label>
@@ -61,18 +82,25 @@
         <option value=""> </option>
     </select>
 
+    </div>
+
+    </div>
+
     <br><br>
 
-    <b> Credit Card Number: </b> <input type="number"> <br><br>
-    <b> PIN: </b> <input type="number"> <br><br>
+    <div>
 
-    <b> Additional Notes: </b> <br>
+    <b> <label for="credit-card-number"> Credit Card Number: </label> </b> <input type="number" id="credit-card-number"> <br><br>
+    <b> <label for="pin"> PIN: </label> </b> <input type="number" id="pin"> <br><br>
+
+    <b> <label for="notes"> Additional Notes: </label> </b> <br>
     <textarea name="notes" id="notes"> </textarea> 
 
     <br><br>
 
-    <button> Submit Order </button>
+    <button type="submit"> <label for="submit-order">Submit Order</label> </button>
 
+    </div>
 
 </body>
 </html>

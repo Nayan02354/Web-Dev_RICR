@@ -10,39 +10,52 @@
     <div style="width:700px; padding:30px; border:2px solid black; margin:auto;">
     <center><h1> Registration Form </h1></center>
 
+    <div>
+
     <center> <p> Of Course, all submitted information is kept in the strictest confidence. </p> </center>
     <center> <p> You always retain control of your information with D.W.Simpson & Co. </p> </center> 
     <center> <h3> Our Services are always at no cost to you </h3> </center>
 
-    <b> Name: </b> <input type="text"> <br><br>
-    <b> Address: </b> <input type="text"> <br><br>
-    <b> City: </b> <input type="text"> 
-    <b> State/Province: </b> <input type="text"> <br><br>
-    <b> Zip code: </b> <input type="number"> <br><br>
-    <b> Country: </b> <input type="text"> <br><br>
-    <b> Phone(H): </b> <input type="number">
-    <b> Fax: </b> <input type="number"> <br><br>
-    <b> Phone(W): </b> <input type="number"> (if able to speak freely) <br><br>
-    <b> Email: </b> <input type="email"> <br><br>
-    <b> Company Name: </b> <input type="text"> (Optional) <br><br>
+    </div>
 
-    <b> Desired Region: </b> 
-    <select name="Region" id="State"> 
+    <div>
+
+    <b> <label for="name"> Name: </label> </b> <input type="text" id="name"> <br><br>
+    <b> <label for="address"> Address: </label> </b> <input type="text" id="address"> <br><br>
+    <b> <label for="city"> City: </label> </b> <input type="text" id="city"> 
+    <b> <label for="state"> State/Province: </label> </b> <input type="text" id="state"> <br><br>
+    <b> <label for="zip-code"> Zip code: </label> </b> <input type="number" id="zip-code"> <br><br>
+    <b> <label for="country"> Country: </label> </b> <input type="text" id="country"> <br><br>
+    <b> <label for="phone-h"> Phone(H): </label> </b> <input type="number" id="phone-h">
+    <b> <label for="fax"> Fax: </label> </b> <input type="number" id="fax"> <br><br>
+    <b> <label for="phone-w"> Phone(W): </label> </b> <input type="number" id="phone-w"> (if able to speak freely) <br><br>
+    <b> <label for="email"> Email: </label> </b> <input type="email" id="email"> <br><br>
+    <b> <label for="company-name"> Company Name: </label> </b> <input type="text" id="company-name"> (Optional) <br><br>
+
+    <b> <label for="desired-region"> Desired Region: </label> </b> 
+    <select name="Region" id="desired-region"> 
         <option value="Other"> Other </option>
         <option value="MP"> MP </option>
         <option value="Indore"> Indore </option>
         <option value="Gwalior"> Gwalior </option>
     </select>
 
-    <b> Other: </b> <input type="text"> <br><br>
+    <b> <label for="other-region"> Other: </label> </b> <input type="text" id="other-region"> <br><br>
 
-    <b> Profession Desgination Earned: </b> <br>
+    </div>
 
-    <input type="checkbox" name="course" id="">
-    <label for="College Student"> College Student </label>
+    <div>
+
+    <b> <label for="profession"> Profession Desgination Earned: </label> </b> <br>
+
+    <input type="checkbox" name="course" id="college-student">
+    <label for="college-student"> College Student </label>
 
     <input type="checkbox" name="course" id="female">
-    <label for="Acturial Student"> Acturial Student </label> 
+    <label for="female"> Female </label> 
+
+    <input type="checkbox" name="course" id="other">
+    <label for="other"> Other </label>
 
     <input type="checkbox" name="course" id="other">
     <label for="ACAS"> ACAS </label>
@@ -92,15 +105,20 @@
 
     <input type="checkbox" name="course" id="other">
     <label for="Data Mining"> Data Mining </label>
-
+ 
     <input type="checkbox" name="course" id="other">
     <label for="Quant"> Quant </label>
 
+    </div>
+
     <br><br>
+
+    <div> 
 
     <b> Other: </b> <input type="text"> <br><br>
     <b> Designations: </b> <input type="text"> <br><br>
 
+    </div>
 
 </body>
 </html>

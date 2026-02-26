@@ -6,71 +6,130 @@
     <title>Forms Task-6</title>
 </head>
 <body>
-    
-    <div style="width:500px; padding:30px; border:2px solid black; margin:auto;">  
-    <center> <h2> Doctor Appointment Form </h2> </center>
 
-    <hr color="red">
+    <div align="center" style="width:500px; padding:30px; border:2px solid black; margin:auto;">
 
-    Appointment Date: <input type="date"> <br><br>
-    Appointment Time: <input type="time"> <br><br>
-    Name: <input type="text" value="First Name"> <input type="text" value="Last Name">                  <br><br>
-    
-    Gender: <input type="radio" name="gender" id="male">
-    <label for="male"> Male </label>
+        <h2>Doctor Appointment Form</h2>
+        <hr color="red">
 
-    <input type="radio" name="gender" id="female">
-    <label for="female"> Female </label> 
+        <form>
 
-    <br><br>
+            <table>
+                <tr>
+                    <td> <img src="Doctor img.avif" width="250" alt="Doctor Image"> </td>
+                    <td width="60%" valign="top"> </td>
+                </tr>
+            </table>
 
-    Phone: <input type="number">
+            <table>
 
-    <br><br>
+                <tr>
+                    <td> Appointment Date </td>
+                    <td> <input type="date" name="date"> </td>
+                </tr>
 
-    Address: 
-    <select name="city" id="city">
-    <option value=""> City </option> 
-    <option value="Bhopal"> Bhopal </option>
-    <option value="Jabalpur"> Jabalpur </option>
-    <option value="Indore"> Indore </option>
-    </select>
+                <tr>
+                    <td> Appointment Time </td>
+                    <td> <input type="time" name="time"> </td>
+                </tr>
 
-    <select name="state" id="state">
-    <option value=""> state </option> 
-    <option value="MP"> Madhya Pradesh </option>
-    <option value="Maharashtra"> Maharashtra </option>
-    <option value="Rajasthan"> Rajasthan </option>
-    </select>
+                <br><br>
 
-    <br><br>
+                <tr>
+                    <td> Name </td>
+                    <td>
+                        <input type="text" name="first_name" placeholder="First Name">
+                        <input type="text" name="last_name" placeholder="Last Name">
+                    </td>
+                </tr>
 
-    Your Query: <textarea name="query" id="query"> </textarea> <br><br>
+                <tr>
+                    <td> Gender </td>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male"> Male </label>
 
-    Appointment Type: Select which Appoitnment type you require <br>
-    <input type="checkbox" name="appointment">
-    <label for="general"> General Checkup </label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female"> Female </label>
+                    </td>
+                </tr>
 
-    <br>
+                <tr> 
+                    <td> Phone </td>
+                    <td> <input type="number" name="phone"> </td>
+                </tr>
 
-    <input type="checkbox" name="appointment">
-    <label for="Eye"> Eye Checkup </label>
+                <tr>
+                    <td> Address </td>
+                    <td>
+                        <select name="city">
+                            <option value=""> City </option>
+                            <option> Bhopal </option>
+                            <option> Jabalpur </option>
+                            <option> Indore </option>
+                        </select>
 
-    <br>
+                        <select name="state">
+                            <option value=""> State </option>
+                            <option> Madhya Pradesh </option>
+                            <option> Maharashtra </option>
+                            <option> Rajasthan </option>
+                        </select>
+                    </td>
+                </tr>
 
-    <input type="checkbox" name="appointment">
-    <label for="heart"> Heart Checkup </label>
+                <tr>
+                    <td> Your Query </td>
+                    <td>
+                        <textarea name="query"> </textarea>
+                    </td>
+                </tr>
 
-    <br>
+                <tr>
+                    <td> Appointment Type </td>
+                    <td> Select which appointment type you require </td>
+                </tr>
 
-    <input type="checkbox" name="appointment">
-    <label for="hearing"> Hearing Test </label>
+                <tr>
+                    <td> </td>
+                    <td>
+                        <input type="checkbox" name="cervix">
+                        <label for=""> Cervix Checkup </label>
+                    </td>
+                </tr>
 
-    <br><br>
+                <tr>
+                    <td> </td>
+                    <td>
+                        <input type="checkbox" name="heart">
+                        <label for=""> Heart Checkup </label>
+                    </td>
+                </tr>
 
-    <button> Send </button>
-    
+                <tr>
+                    <td> </td>
+                    <td>
+                        <input type="checkbox" name="eye">
+                        <label for=""> Eye Checkup </label>
+                    </td>
+                </tr>
 
+                <tr>
+                    <td> </td>
+                    <td>
+                        <input type="checkbox" name="hearing">
+                        <label for=""> Hearing Test </label>
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+            <button type="submit"> Send </button>
+
+        </form>
+
+    </div>
 
 </body>
 </html>
