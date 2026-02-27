@@ -1,135 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms Task-6</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Task-6</title>
 </head>
 <body>
 
-    <div align="center" style="width:500px; padding:30px; border:2px solid black; margin:auto;">
 
-        <h2>Doctor Appointment Form</h2>
+    <div align="center" style="width:1200px; padding:30px; border:2px solid black; margin:auto;">
+
+    <table width="100%" cellpadding="20">
+    <tr>
+        <td width="70%" align="center" valign="top">
+            <img src="Doctor img.avif" width="500">
+        </td>
+
+        <td width="55%" valign="top">
+
+        <center> <h2> Doctor Appointment Form </h2> </center>
         <hr color="red">
 
-        <form>
+    <form>
+        <table cellpadding="8" width="100%">
 
-            <table>
-                <tr>
-                    <td> <img src="Doctor img.avif" width="250" alt="Doctor Image"> </td>
-                    <td width="60%" valign="top"> </td>
-                </tr>
-            </table>
+        <tr>
+            <th> Appointment Date </th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> <input type="date"> </td>
+        </tr>
 
-            <table>
+        <tr>
+            <th> Appointment Time </th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> <input type="time"> </td>
+        </tr>
 
-                <tr>
-                    <td> Appointment Date </td>
-                    <td> <input type="date" name="date"> </td>
-                </tr>
+        <tr>
+            <th> Name </th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> <input type="text" name="first name" placeholder="First Name"> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> <input type="text" name="last name" placeholder="Last Name"> </td>
+        </tr>
 
-                <tr>
-                    <td> Appointment Time </td>
-                    <td> <input type="time" name="time"> </td>
-                </tr>
+        <tr>
+            <th> Gender </th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> 
+            <label for="male"> Male </label>
+            <input type="radio" name="gender" id="male">
+                        
+            <label for="female"> Female </label>
+            <input type="radio" name="gender" id="female">
+            </td>
+        </tr>   
+          
+        <tr>
+            <th> Phone </th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> <input type="number" name="phone no" placeholder="**********"> </td>
+        </tr>
 
-                <br><br>
+        <tr>
+            <th> Address </th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>
+            <select name="city">
+            <option value=""> City </option>
+            <option> Bhopal </option>
+            <option> Jabalpur </option>
+            <option> Indore </option>
+            </select>
 
-                <tr>
-                    <td> Name </td>
-                    <td>
-                        <input type="text" name="first_name" placeholder="First Name">
-                        <input type="text" name="last_name" placeholder="Last Name">
-                    </td>
-                </tr>
+            <select name="state">
+            <option value=""> State </option>
+            <option> Madhya Pradesh </option>
+            <option> Maharashtra </option>
+            <option> Rajasthan </option>
+            </select>
+            </td>
+        </tr>
 
-                <tr>
-                    <td> Gender </td>
-                    <td>
-                        <input type="radio" name="gender" id="male">
-                        <label for="male"> Male </label>
+          <br><br>
 
-                        <input type="radio" name="gender" id="female">
-                        <label for="female"> Female </label>
-                    </td>
-                </tr>
+        <tr>
+            <th> Query </th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> <textarea name="Query" id="query"> </textarea>
+          </tr>
+          <tr>
+            <th> Appointment Type </th>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> Select which appointment type you require </td>
+        </tr>
 
-                <tr> 
-                    <td> Phone </td>
-                    <td> <input type="number" name="phone"> </td>
-                </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>        
+            <td>
+            <input type="checkbox" name="cervix">
+            <label for=""> Cervix Checkup </label>
+            </td>
+        </tr>
 
-                <tr>
-                    <td> Address </td>
-                    <td>
-                        <select name="city">
-                            <option value=""> City </option>
-                            <option> Bhopal </option>
-                            <option> Jabalpur </option>
-                            <option> Indore </option>
-                        </select>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>
+            <input type="checkbox" name="heart">
+            <label for=""> Heart Checkup </label>
+            </td>
+        </tr>
 
-                        <select name="state">
-                            <option value=""> State </option>
-                            <option> Madhya Pradesh </option>
-                            <option> Maharashtra </option>
-                            <option> Rajasthan </option>
-                        </select>
-                    </td>
-                </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>
+            <input type="checkbox" name="eye">
+            <label for=""> Eye Checkup </label>
+            </td>
+        </tr>
 
-                <tr>
-                    <td> Your Query </td>
-                    <td>
-                        <textarea name="query"> </textarea>
-                    </td>
-                </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td>
+            <input type="checkbox" name="hearing">
+            <label for=""> Hearing Test </label>
+            </td>
+        </tr>
 
-                <tr>
-                    <td> Appointment Type </td>
-                    <td> Select which appointment type you require </td>
-                </tr>
+    </table>
 
-                <tr>
-                    <td> </td>
-                    <td>
-                        <input type="checkbox" name="cervix">
-                        <label for=""> Cervix Checkup </label>
-                    </td>
-                </tr>
+    <br><br>
 
-                <tr>
-                    <td> </td>
-                    <td>
-                        <input type="checkbox" name="heart">
-                        <label for=""> Heart Checkup </label>
-                    </td>
-                </tr>
+        <center> <button> Send </button> </center>
 
-                <tr>
-                    <td> </td>
-                    <td>
-                        <input type="checkbox" name="eye">
-                        <label for=""> Eye Checkup </label>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td> </td>
-                    <td>
-                        <input type="checkbox" name="hearing">
-                        <label for=""> Hearing Test </label>
-                    </td>
-                </tr>
-
-            </table>
-
-            <br>
-            <button type="submit"> Send </button>
-
-        </form>
+    </table>
 
     </div>
+
+    </table>
+</fieldset>
+
 
 </body>
 </html>
