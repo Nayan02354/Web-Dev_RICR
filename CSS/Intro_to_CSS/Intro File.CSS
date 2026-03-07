@@ -1,0 +1,25 @@
+*{
+    background-color: rgb(166, 255, 0);
+ }
+
+div{
+    background-color: aqua;
+    }
+
+.abc{
+    background-color: burlywood;
+    color: red;
+    border: 1px solid green; 
+    border: 1px dotted #000;
+    border: 1px double-button #000;  
+    border: radius 10px;
+    }
+
+h1{
+    background-color: blue;
+  }
+
+#head1{
+    background-color: red;
+}
+
