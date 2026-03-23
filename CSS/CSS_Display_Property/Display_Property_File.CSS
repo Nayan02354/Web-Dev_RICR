@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.a{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    /* display: none; */
+}
+
+#myDiv, 
+#myDiv2, 
+#myDiv3{
+    background-color: gray;
+    border: 1px solid black;
+}
+
+myDiv2{
+    display: inline;
+}
+
+.b{
+    width: 200px;
+    height: 200px;
+}
+
+/* #mySpan, 
+#mySpan2, 
+#mySpan3{
+    background-color: red;
+    border: 1px solid black;
+} */
+
+.b{
+    background-color: red;
+    border: 1px solid black;
+}
+
+#mySpan2{
+    display: inline-block;
+}
+
+#myDiv2{
+    display: inline;
+}

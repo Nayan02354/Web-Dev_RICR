@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    padding-bottom: 30vh;
+    align-items: top;
+}
+
+.left{
+    background-color: purple;
+    width: 270px;
+    padding: 20px;
+    border-radius: 0px;
+    display: grid;
+    gap: 20px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.contact{
+    justify-content: center;
+    
+}
+
+.skillss{
+    justify-content: center;
+
+
+}
+
+.reference{
+    justify-content: baseline;
+
+}
+
+
+.right{
+    background-color: pink;
+}
+
+#aboutMe{
+
+
+}
+
+#experience{
+    display: grid;
+ 
+}
+
+.comp1, .comp2, .comp3 {
+    color: red;
+    font-size: 16px;
+    
+}
+
+.pos1{
+     
+}
+
+ 
+.pos2, .pos3{
+   
+   
+}
+
+#education{
+    
+}
+
+#awardANDcerteficates{
+
+}
+
+.cert1, .cert2, .cert3, .cert4{  
+    color: green;
+ 
+} 
+
