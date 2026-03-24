@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS My Resume</title>
+    <title> CSS My Resume </title>
     <link rel="stylesheet" href="My_Resume_File.CSS" />
   </head>
   <body>
@@ -11,18 +11,17 @@
     <div id="main">
 
       <!-- --LEFT SIDE -->
-      <div class="left" id="profile">
+      <div id="left">
         <div class="profile">
           <img src="My pic.jpeg" alt="profile" width="300" height="300" />
           <h2> NAYAN VISHWAKARMA </h2>
           <p> SOFTWARE ENGINEER </p>
-        </div>
-        <!-- Profile class wala div -->
+        </div> <!-- Profile class wala div -->
 
         <div class="contact">
           <h3> CONTACT INFO </h3>
 
-          <div>📞 <a href="tel:+918461944038"> 8461944038 </a></div>
+          <div>📞 <a href="tel:+918461944038"> 8461944038 </a> </div>
 
           <div>
             📧
@@ -118,9 +117,10 @@
       
 
       <!-- RIGHT SIDE -->
-      <div class="right" id="prsnlDetails">
+      <div id="right">
+
         <div id="aboutMe">
-          <h1> ABOUT ME </h1> <br>
+          <h1 class="abtMe"> ABOUT ME </h1> <br>
           <p>
             I am a Computer Science Engineering student specializing in
             Artificial Intelligence and Machine Learning, with a strong focus on
@@ -130,7 +130,7 @@
             developing skills in web development, working with HTML, CSS, and
             core programming concepts to build practical projects.
 
-            <br /><br/>
+            <br><br>
             I have a keen interest in understanding how intelligent systems
             work, including concepts like AI models, data processing, and
             real-world applications. I am a disciplined and growth-oriented
@@ -141,23 +141,24 @@
           </p>
         </div> <!-- aboutMe class wala div -->
         
-        <br/><br/>
+        <br><br>
 
         <div id="experience">
 
-          <h1> EXPERIENCE </h1> <br>
+          <h1 class="expr"> EXPERIENCE </h1> <br>
 
+          <div id="exp1">
           <div class="comp1">
             <h4> COMPANY ONE </h4>
             <p>
               RICR <br/>
               2024 - 2026
             </p>
-          </div>
+          </div> <!-- comp1 class wala div -->
 
           <br>
 
-          <div class="pos1" id="pos1">
+          <div class="pos1">
             <h4> POSITION ONE </h4>
             <p>
               Software Development Intern <br/>
@@ -165,17 +166,19 @@
               - Worked with backend team to integrate APIs <br/>
               - Fixed bugs and improved application performance <br/>
             </p>
-          </div>
+          </div> <!-- pos1 class wala div -->
+          </div> <!-- exp1 id wala div -->
 
           <br>
 
+          <div id="exp2">
           <div class="comp2">
             <h4> COMPANY TWO </h4>
             <p>
               Google <br/>
               2026 - 2029
             </p>
-          </div>
+          </div> <!-- comp2 class wala div -->
 
         <br>
 
@@ -187,17 +190,19 @@
               - Improved user experience and page load speed <br/>
               - Collaborated with designers to implement modern layouts <br/>
             </p>
-          </div>
+          </div> <!-- pos2 class wala div -->
+          </div> <!-- exp2 id wala div -->
 
          <br>
 
+         <div id="exp3">
           <div class="comp3">
             <h4> COMPANY THREE </h4>
             <p>
               Open AI <br/>
               2029 - 2035
             </p>
-          </div>
+          </div> <!-- comp3 class wala div -->
 
         <br>
 
@@ -209,49 +214,64 @@
               - Analyzed datasets and improved prediction accuracy <br/>
               - Assisted in building simple AI-based applications <br/>
             </p>
-          </div>
+          </div> <!-- pos3 class wala div -->
+          </div> <!-- exp3 id wala div -->
         </div> <!-- experience id wala div --> 
 
         <br><br>
 
         <div id="education">
-          <h1> EDUCATION </h1> <br>
-          <div>
+          <h1 class="edu"> EDUCATION </h1> <br>
+
+          <div id="clg">
+            <div class="clgName">
             <h4> COLLEGE </h4>
             <p>
               LNCT - Excellence <br/>
               2020 - 2024
-            </p> <br>
+            </p> 
+            </div> <!-- clgName class wala div -->
+            <br>
 
-          </div>
-
+          <div class="course">
           <h4> COURSE </h4>
           <div>
             <p> B.Tech, CSE-AIML </p>
-          </div> <br>
+          </div> 
+          </div>  <!-- course class wala div -->
+          </div>  <!-- clg id wala div -->
+    
+          <br>
 
-          <h4> SCHOOL NAME </h4>
+          <div id="scl"">
+          <div class="sclName">
+          <h4> SCHOOL </h4>
           <div>
             <p>
               St. Paul School, <br/>
               Anand Nagar, <br/>
               Bhopal
             </p>
-          </div> <br>
+          </div> <!-- class scl Name wala div -->
+          </div> <!-- id scl Name wala div -->
+          <br>
 
+          <div class="percent">
           <h4> Percentages </h4>
           <div>
             <p>
               10th = 82% <br/>
               12th = 66%
             </p>
+          </div> <!-- class percent wala div -->
           </div>
+          </div> <!-- scl id wala div -->
         </div> <!-- education id wala div -->
 
         <br><br>
         
         <div id="awardANDcerteficates">
-          <h1> AWARDS & CERTEFICATES </h1> <br>
+          <h1 class="awdNcert"> AWARDS & CERTEFICATES </h1> <br>
 
           <div class="cert1">
             <p>
@@ -264,7 +284,7 @@
               problem-solving skills, dedication, and a proactive approach in
               improving overall productivity.
             </p>
-          </div>
+          </div> <!-- cert1 class wala div -->
 
           <br>
 
@@ -276,7 +296,7 @@
               Description: Completed intensive training in DSA covering arrays,
               recursion, sorting, and problem-solving techniques.
             </p>
-          </div>
+          </div> <!-- cert2 class wala div -->
 
           <br>
 
@@ -289,7 +309,7 @@
               Express.js, React, and Node.js. Built dynamic web applications
               with REST APIs, frontend integration, and database management.
             </p>
-          </div>
+          </div> <!-- cert3 class wala div -->
 
            <br>
 
@@ -301,7 +321,7 @@
               Description: Gained foundational knowledge of machine learning
               concepts, data handling, and basic models.
             </p>
-          </div>
+          </div> <!-- cert4 class wala div -->
         </div> <!-- Award&Certeficates id wala div -->
        
       </div> <!-- Right side id wala div -->
