@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  margin: 10px auto;
+  width: 1000px;
+  height: 1850px;
+  display: flex;
+}
+
+#sidebar {
+  width: 35%;
+  background-color: #34495e;
+  padding: 20px;
+}
+
+#mainContent {
+  width: 65%;
+  background-color: #d6dbdf;
+  padding: 20px;
+}
+
+#img {
+  margin: 10px auto;
+  height: 240px;
+  width: 240px;
+  overflow: hidden;
+  border-radius: 100%;
+
+  img {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+#name {
+  padding: 5px;
+  color: aliceblue;
+  text-align: center;
+}
+
+#desigination {
+  text-align: center;
+  color: antiquewhite;
+  font-variant: small-caps;
+}
+
+hr {
+  margin-top: 5px;
+  border: 1px solid #000;
+}
+
+.sidebarHeading {
+  margin-top: 20px;
+  color: aliceblue;
+  font-variant: small-caps;
+}
+
+.sidebarGreyText {
+  padding: 7px 0;
+  color: #cacbcb;
+}
+
+svg {
+  color: aqua;
+}
+
+.contactInfo {
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: center;
+}
+
+.contact a:hover
+{
+  color: #00bcd4;
+}
+
+.reference,.skillss, .contact{
+    justify-content: baseline;
+}
+
+#aboutMe{
+
+}
+
+#experience{
+    display: grid;
+    margin-top: 30px;
+}
+
+#exp1, #exp2, #exp3{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 20px;   
+}
+
+.comp1, .comp2, .comp3 {
+    font-size: 18px;
+    width: 35%;
+}
+
+.pos1, .pos2, .pos3{
+  width: 60%;
+  border-left: 3px solid gray;   
+  padding-left: 10px;
+}
+
+#clg, #scl{
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 30px;
+}
+
+.clgName, .sclName{
+  width: 35%;
+}
+
+.course, .percent{
+  width: 60%;
+  border-left: 3px solid gray;
+  padding-left: 10px;
+}
+
+#awardANDcerteficates{
+
+}
+
+/* These classes are of h1 & br */
+#cert1{
+    display: flex;
+}
+
+.abtMe, .awdNcert, .edu, .expr{
+    color: purple;
+  
+}
+
+.headingcomp, .headingedu1{
+  color: rgb(17, 17, 62);
+}
+
+.headingpos, .headingedu2, .headingawrd{
+  color: blue;
+}
+
+.awrdFor{
+  color: brown;
+}

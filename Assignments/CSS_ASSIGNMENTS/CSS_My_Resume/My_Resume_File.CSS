@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.profile{
+    
+}
+
 #main{
     display: flex;
     padding: 40px;
@@ -96,4 +100,5 @@ img{
 
 .abtMe, .awdNcert, .edu, .expr{
     color: darkblue;
+  
 }
