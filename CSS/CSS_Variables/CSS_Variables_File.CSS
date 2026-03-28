@@ -1,0 +1,48 @@
+:root{
+    --primary-color: darkorange;
+    ---secondary-color: skyblue;
+    --text-color: green;
+}
+
+h1{
+    color: var(--primary-color);
+}
+
+h3{
+    color: var(---secondary-color);
+}
+
+p{
+    --br-radius:5px;
+    color: var(--text-color);
+}
+
+h3{
+    color: var(---secondary-color);
+}
+
+.tr1{
+    color: var(--text-color);
+}
+
+.tr2{
+    color: var(---secondary-color);
+}
+
+.tr3{
+    color: var(--primary-color);
+}
+
+button{
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+#login{
+    background-color: darkorange;
+}
+
+#register{
+    background-color: var(--secondary-color);
+}
