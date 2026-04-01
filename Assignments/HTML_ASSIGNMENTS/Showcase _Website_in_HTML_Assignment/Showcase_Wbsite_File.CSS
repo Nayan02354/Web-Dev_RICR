@@ -1,0 +1,45 @@
+:root{
+    --Heading-color: darkorange;
+    --SubHeading-color: skyblue;
+    --text-color1: green;
+    --text-color2: #D3968C;
+    --text-color3: yellow;
+    --text-color4: #5A397A;
+    --text-color5: yellowgreen;
+}
+
+h1{
+    color: var(--Heading-color);
+}
+
+h2{
+    color: var(--SubHeading-color);
+}
+
+b{
+    color: var(--text-color);
+}
+
+label{
+    color: var(--text-color1);
+}
+
+b{
+    color: var(--text-color4);
+}
+
+p{
+    color: var(--text-color1);
+}
+
+table{
+    color: red;
+}
+
+h3{
+    color: var(--text-color5);
+}
+
+a{
+    color: var(--text-color4);
+}
