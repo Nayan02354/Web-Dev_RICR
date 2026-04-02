@@ -1,10 +1,19 @@
 :root{
-    --primary-color: darkorange;
-    ---secondary-color: skyblue;
-    --text-color: green;
+    --primary-color : darkorange;
+    ---secondary-color : skyblue;
+    --text-color1 : green;
+    --text-color2 : red;
+    --text-color3 : purple;
+    --text-color4 : yellow;
+    --text-color5 : violet;
+
 }
 
 h1{
+    color: var(--primary-color);
+}
+
+h2{
     color: var(--primary-color);
 }
 
@@ -14,11 +23,7 @@ h3{
 
 p{
     --br-radius:5px;
-    color: var(--text-color);
-}
-
-h3{
-    color: var(---secondary-color);
+    color: var(--text-color2);
 }
 
 .tr1{
@@ -37,6 +42,7 @@ button{
     border: 1px solid yellow;
     border-radius: 5px;
     padding: 8px 15px;
+    color: var(--text-color1);
 }
 
 #login{
@@ -44,5 +50,5 @@ button{
 }
 
 #register{
-    background-color: var(--secondary-color);
+    background-color: var(--text-color3);
 }
