@@ -43,3 +43,11 @@ h3{
 a{
     color: var(--text-color4);
 }
+
+img{
+    border-radius: 50%;
+}
+
+table{
+    background-color: pink;
+}
