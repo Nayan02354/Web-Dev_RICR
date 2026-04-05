@@ -1,0 +1,57 @@
+#div1{
+    border: 1px solid black;
+    width: 10px;
+    height: 20px;
+    overflow: hidden;
+    text-wrap-mode: nowrap;
+}
+
+#div1:hover{
+    width: 200px;
+    transition: width 3s linear 2s;
+}
+
+#div2{
+    border: 1px solid black;
+    width: 200px;
+    height: 20px;
+    overflow: hidden;
+    text-wrap-mode: nowrap;
+}
+
+#card{
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    /* transform: rotateZ(0deg,0deg); */
+    /* transform: skew(0deg,0deg); */
+    /* transform: scale(1,1) */
+    transform: translate(0,0);
+    transition: transform 2s linear; /* ease-in-out, ease-in, ease-out = ye 3 prop bhi hoti for transition */ 
+}
+
+#card:hover{
+    /* transform: rotateZ(30deg,45deg); */
+    /* transform: skew(10deg,15deg); */
+    /* transform: scale(1.5,1.5); */
+    transform: translate(200px,200px);
+    transition: transform 2s linear;
+}
+
+/* #card div{
+    transform: translate(200px,200px);
+    transition: transform 2s linear;
+} */
+
+/* #card:hover div{
+    transform: translate(200px,200px);
+    transition: transform 2s linear;
+} */
+
+/* Transform ke 4 Types:
+    1. Skew = element ko x-axis aur y-axis dono ke respect me tilt kar deta hai.
+    2. Scale = element ko x-axis aur y-axis dono ke respect me resize kar deta hai.
+    3. Translate = element ko x-axis aur y-axis dono ke respect me move kar deta hai.
+    4. Transition = ye property element ke state change hone par animation add karne ke liye use hoti hai. Isme aap specify kar sakte hain ki kaunse property ko animate karna hai, animation duration, timing function, aur delay. 
+*/
