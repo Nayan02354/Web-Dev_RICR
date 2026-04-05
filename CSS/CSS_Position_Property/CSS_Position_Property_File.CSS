@@ -39,5 +39,6 @@
 #visitButton{
     position: absolute;
     right: 0; 
-}
+    left: calc(width );
 
+}
