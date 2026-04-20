@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color-primary:          #c2410c;  /* Navbar bg, primary buttons, icon accents, highlighted heading words */
+  --color-primary-content:  #ffffff;  /* Text on primary background */
+  --color-secondary:        #6b7280;  /* Body paragraph text, subheadings, captions */
+  --color-neutral:          #3f3f46;  /* Footer bg, dark stat bars, dark CTA sections */
+  --color-neutral-content:  #f4f4f5;  /* All text placed on dark/neutral backgrounds */
+  --color-base-100:         #fff8f1;  /* Main page background, card backgrounds */
+  --color-base-200:         #f5ede5;  /* Hover states on light backgrounds, accordion header hover */
+  --color-base-300:         #e7d9c9;  /* Card borders, dividers, input borders */
+  --color-base-content:     #2d1b10;  /* Bold/main text on light backgrounds */
+  --color-error:            #ef4444;  /* Red for error states */
+  --color-success:          #22c55e;  /* Green for success states */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* body{
+  width: 100%;
+  height: 100vh;
+} */
+/* ----------header---------- */
+#header{
+    background-color: var(--color-primary);
+    height: 64px;
+    width: 100%;
+    position:fixed;
+    z-index: 99;
+}
+#logo{
+width: 87.45px;
+height: 56px;
+overflow: hidden;
+img{
+  width: inherit;
+  width: inherit;
+}
+
+}
+#mainDiv{
+  width: 100%;
+  height: 85vh;
+  background-image: url(../Cravings_Website/Images/Bg\ Restaurant\ img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+#mainCont{
+  padding : 100px;
+  margin-left: 30%;
+}
+ 
+  
+}
+#restaurants{
+  min-height: 90vh;
+
+    
+    background: linear-gradient(
+        to bottom,
+        #c2410c 0%,     /* strong orange top */
+        #e07a52 20%,    /* medium orange */
+        #f3c9b6 40%,    /* light peach */
+        #f9efe9 60%,    /* very light */
+        #ffffff 85%     /* white bottom */
+    );
+}
+.restaurants{
+
+  width: 350px;
+  height: 430px;
+  background-color: var(--color-primary-content);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4); 
+  border-radius: 14px;
+  overflow: hidden;
+img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+
+}
+#restaurantsItems{
+  padding:20px 180px;
+}
+ .food{
+  background-color: var(--color-base-300);
+  text-align: center;
+ }
+ .menuButton {
+  width: 300px;
+  height: 40px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  border-radius: 10px;
+
+  background-color: var(--color-primary);
+  
+ }
+ .n1,
+ .n2{
+ width: 200px;
+ height: 200px;
+ margin-top: 50px;
+ margin-bottom: 50px;
+ 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+
+ }
+ /*------------ Feedback------------ */
+ .feedback{
+   width: 250px;
+ height: auto;
+ padding: 0px 5px ;
+ margin-top: 10px;
+ margin-bottom: 50px;}
+
+  
+ 
+ .feedbackHeading{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+ }
+ .star{
+  color: gold;
+   font-size: 30px;
+ }
+ .profile1,
+ .profile2
+ {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-base-100);
+  border-radius: 50%;
+ }
+ .profile2{
+   background-color: rgb(199, 49, 167);
+ }
+ /* Become a Restaurant Partner */
+ #partner{
+width: 100%;
+height: 40vh;
+display: grid;
+justify-content: center;
+align-items: center;
+background-color: var(--color-primary);
+color: var(--color-base-200);
+ }
+/* ----------Footer---------- */
+#Footer{
+background-color: var(--color-neutral);
+}
+#Footerlogo{
+  width: 128px;
+  height: 128px;
+  border: 2px solid blue;
+  overflow: hidden;
+  background-color: #6d6b6b;
+  img{
+    width: inherit;
+    height: inherit;
+  }
+}
+a{
+  text-decoration: none;
+color: var(--color-neutral-content);
+
+}
+a:hover{
+  color: var(--color-primary);
+}
+
+/*---------------- Login Page --------------*/
+#loginForm,
+#registerForm
+{ 
+ width: 100%;
+ height:100vh;
+  padding-top: 120px;
+ background-image:url(../Cravings_Website/Images/Foodtable\ img.jpg) ;
+ 
+ 
+ 
+}
+#form{
+  width: 30%;
+ 
+  margin-left: 150px;
+ 
+  
+  h1{
+    color: var(--color-primary);
+  }
+  a{
+    margin-left: 55px;
+    color: var(--color-primary);
+  }
+  #button,
+  button
+  {
+    
+border: none ;
+
+    background-color: var(--color-primary);
+  }
+  .input{
+      height: 36px;
+      direction: none;
+      border: none;
+      padding: 8px;
+      border: 1px solid var(--color-base-300);
+      
+    }
+    .input:hover{
+        border: 1.5px solid var(--color-primary);
+      }
+}
+ #button{
+width: 90%;
+    height: 5vh;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center  ;
+    border-radius: 10px;
+  
+    
+
+ }
+ 
+/*---------------- Register Page --------------*/
+
+#registerForm
+{
+  #form{
+    margin-left: 60%;
+   margin-bottom: 20px;
+  
+}
+}
+/*---------------- About Page --------------*/
+#backgroundImg{
+  width: 100%;
+  height: 80vh;
+  background-image:url(../Cravings_Website/Images/aboutPage.png) ;
+  
+  }
+#AboutLogo{
+  width: 128px;
+  height: 128px;
+  padding: 20%;
+  margin-bottom: 30px;
+   
+   img{
+    width: inherit;
+    height: inherit;
+   }
+  
+}
+#heading{
+  h1{
+    font-weight: 700;
+  }
+  strong{
+color: var(--color-primary);
+  }
+}
+#numberContainer{
+  background-color: var(--color-neutral);
+  h4{
+    color: var(--color-primary);
+    margin-left: 12px;
+    font-weight: 800;
+  }
+}
+#story{
+  h4{
+    color: var(--color-primary);
+  }
+  .leftCont
+  {
+  width: 300px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #fff;
+
+     /* box-shadow: 10px 4px 15px rgba(0, 0,0,0.2);
+     border-radius: 15px; */
+     border: 1px solid #e4cfb8;
+     border-radius: 20PX;
+     h1{
+      color: var(--color-primary);
+     }
+  }
+}
+#coreValue{
+  .value{
+    width: 300px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #fff;
+
+     /* box-shadow: 10px 4px 15px rgba(0, 0,0,0.2);
+     border-radius: 15px; */
+     border: 1px solid #e4cfb8;
+     border-radius: 20PX;
+     h1{
+      color: var(--color-primary);
+     }
+  }
+  .head{
+    color: var(--color-primary);
+  }
+  }
+  #searchBar{
+    padding: 100px;
+    padding-bottom: 0px;
+  }
+  .searchBar{
+    
+    width: 100%;
+    height: 7vh;
+    
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3); 
+    border: 1px solid var(--color-primary);
+    
+    
+   
+  }
+  /* -----------Help Page------------ */
+  #helpPageBackground{
+     width: 100%;
+  height: 100vh;
+
+  img{
+    width: inherit;
+    height: inherit;
+  }
+  
+  }
