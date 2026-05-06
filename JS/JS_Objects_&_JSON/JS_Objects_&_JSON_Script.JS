@@ -49,9 +49,8 @@ FData.forEach((item) => {
 });
 
 // Use of Map
-FData.map((element , idx) => {
-    
-    console.log(element.phone);
+FData.map((element, idx) => {
+  console.log(element.phone);
 });
 
 //Accessing all data
@@ -93,6 +92,6 @@ console.log(ar.findIndex((val) => val === 32));
 console.log(ar.findLastIndex((val) => val === 6));
 
 // Filter (Filter multiple Seach krta h)
-let ar2 = [22, 43, 67, 74, 8, 91, 5, 23, 32, 6, 6, 6, 6, 9, 4, 7,65,78,55];
+let ar2 = [22, 43, 67, 74, 8, 91, 5, 23, 32, 6, 6, 6, 6, 9, 4, 7, 65, 78, 55];
 
 console.log(ar2.filter((val) => val > 20));
