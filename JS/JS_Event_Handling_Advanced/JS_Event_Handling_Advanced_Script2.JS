@@ -22,14 +22,18 @@ document.querySelector("form").addEventListener("reset", (event) => {
   event.preventDefault();
 
   confirm("Are you Sure") && window.location.reload();
-  
-            // OR //
 
-//   If else lihne k dusra tarika
-//   confirm("Are you Sure") && window.location.reload();
-//     if(confirm("Are you Sure")){
-//     window.location.reload();
-//   
-  
- 
+  // OR //
+
+  //   If else lihne k dusra tarika
+  //   confirm("Are you Sure") && window.location.reload();
+  //     if(confirm("Are you Sure")){
+  //     window.location.reload();
+});
+
+document.addEventListener("keydown", (event) => {
+  let KeyPress = event.key;
+  console.log(KeyPress);
+
+  KeyPress === "Escape" && window.location.reload();
 });
