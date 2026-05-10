@@ -1,0 +1,13 @@
+#main{
+    width: 500px;
+    height: 500px;
+    background-color: skyblue;
+}
+
+.head{
+    background-color: orange;
+}
+
+.input{
+    border-bottom: 1px solid black;
+}
