@@ -16,4 +16,7 @@ document.querySelector("form").addEventListener("submit", (event) => {
   document.getElementById("myAge").innerText = Age;
 
   console.log(Age);
+
+
 });
+
