@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salary Calculator Mini Project </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="Salary_Calculator_File.CSS" />
+  </head>
+  <body>
+
+      <div id="main" class="m-auto">
+      <div id="forms" class="w-75 m-auto pt-4">
+        <div id="head" class="border rounded-3 text-center">
+          <h2> Salary Calculator </h2>
+        </div>
+        <form
+          action=""
+          class="bg-white border rounded-3 shadow mt-3 p-5 d-flex flex-column gap-3"
+        >
+          <label for="billAmount"> Basic Salary </label>
+          <input type="number" class="form-control InputBox" id="basicSalary" />
+
+          <div>
+            <button
+              type="submit"
+              class="btn btn-info border rounded-3 mb-4 mt-2"
+            >
+              Calculate Gross Salary
+            </button>
+            <button
+              type="reset"
+              class="btn btn-info border rounded-3 mb-4 mt-2"
+            >
+              Reset
+            </button>
+          </div>
+          <div id="" clas="  text-center d-flex flex-column m-auto">
+            <div class="fw-bold"> Basic Salary: <span id="Bs"> XX ₹ </span> </div>
+            <div class="fw-bold"> HRA : <span id="Har"> XX ₹ </span> </div>
+
+            <div class="fw-bold"> DA: <span id="Da"> XX ₹ </span></div>
+            <div class="fw-bold"> Gross Salary: <span id="Gs"> XX ₹ </span></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+
+
+    
+    <!-- Jo bhi kch likhoge iske upar hee likhna , neecha nhi likhna glti se bhi -->
+    <!-- BootStrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Salary_Calculator_Script.JS"></script>
+  </body>
+</html>
