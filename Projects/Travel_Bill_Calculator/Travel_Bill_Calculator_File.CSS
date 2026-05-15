@@ -1,0 +1,12 @@
+#main{
+    width: 500px;
+    height: 550px;
+    background-color: purple;
+
+}
+#head{
+    background-color: rgb(231, 200, 142);
+}
+.InputBox{
+    border: 2px solid greenyellow;
+}
