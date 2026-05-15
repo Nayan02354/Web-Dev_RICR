@@ -1,274 +1,300 @@
-<!doctype html>
+[15-05-2026 18:24] Aman Bhaiya FSD-6 RICR: <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Coaching Institute Registration Form </title>
+    <title>Registration From</title>
+    <link rel="stylesheet" href="JS_Coaching_Institute_Registration_Form_File.CSS" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-
-    <link
-      rel="stylesheet"
-      href="JS_Coaching_Institute_Registration_Form_File.CSS"
-    />
   </head>
   <body>
-    <header class="text-center bg-danger border-3"> INSTITUTE REGISTRATION FORM </header>
-
-
-    <div id="personalInfo" class="d-flex">
-        <form id="personalInfoForm">
-            <label for=""> Full Name : </label> <input type="text" id="fullName" placeholder="Enter your full Name ">
-            <label for=""> Phone Number : </label> <input type="email" id="email" placeholder="Enter your Email ">
-            <label for=""> Email ID : </label> <input type="number" id="phone" placeholder="Enter your Phone ">
-            <label for=""> Date of Birth : </label> <input type="date" id="DOB" placeholder="Enter your D.O.B ">
-            <label for=""> Gender :
-            </label> <input type="radio">
-                <span> Male </span>
-            </label> <input type="radio">
-                <span> Female </span>
-        </form>
-    </div>
-
-    <div id="academicDetails">
-        <label for=""> Last Completed Qualification : </label>
-        <select name="qualification" id="qualification">
-            <option value=""> --Select-- </option>
-            <option value="10"> 10th </option>
-            <option value="12"> 12th </option>
-            <option value="Graduate"> Gradute </option>
-            <option value="PG"> Post Graduate </option>
-        </select>
-
-        <label for=""> Percentage/Grade in Last Qualification : </label>
-        <select name="qualification" id="qualification">
-            <option value=""> --Select-- </option>
-            <option value="E"> 50% - 60% </option>
-            <option value="D"> 60% - 70% </option>
-            <option value="C"> 70% - 80% </option>
-            <option value="B"> 80% - 90% </option>
-            <option value="A"> 90% - 100% </option>
-        </select>
-    </div>
-
-    <div id="selectCourse">
-        <label for=""> Preffered Course : </label>
-        <select name="qualification" id="qualification">
-            <option value=""> --Select-- </option>
-            <option value=""> Java + DSA </option>
-            <option value=""> Python + DSA </option> 
-            <option value=""> Full Stack Web Development </option>
-            <option value=""> Business Analyst </option>
-            <option value=""> Data Science with Python </option>
-            <option value=""> Data Analytics with Python </option>
-            <option value=""> AIML </option>
-        </select>
-    </div>
-
-    <div id="batchTiming">
-        <label for=""> Batch Timing Preference : </label>
-        <select name="batchTime" id="batchTie">
-            <option value=""> --Select-- </option>
-            <option value=""> Moring </option>
-            <option value=""> Afternoon </option>
-            <option value=""> Evening </option>
-            <option value=""> Night </option>
-        </select>
-    </div>
-
-    <div id="residentalDetaild">
-        <input type="text" id="address" placeholder="Enter Address">
-        <input type="text" id="city" placeholder="Enter City">
-        <input type="text" id="pincode" placeholder="Enter Pincode">      
-    </div>
-
-    <div id="guardianDetails">
-        <input type="text" id="GuardianFullName" placeholder="Guardian Full Name">
-        <input type="number" id="GuardianPhonee" placeholder="Guardian Phone Number">
-    </div>
-
-    <div id="addtionlInfo">
-        <label for=""> How did you hear about us? : </label>
-        <select name="" id="">
-        <option value=""> --Select-- </option>
-        <option value=""> Instagram </option>
-        <option value=""> AD </option>
-        <option value=""> Newspaper </option>
-        <option value=""> Friends </option>
-        <option value=""> Others </option>
-        </select>
-
-        <label for=""></label>
-
-
-    </div>
-
-    
-
-
-      Required; options such as Friends, Online Ad, Newspaper, Social Media, or Other.
-
-o   Special Requirements (optional): Text area for students to specify any additional needs or preferences.
-
-
-
-
-
-
-
-
-
-
-<!-- 
-    <header id="header">
-      <h1> RICR </h1>
-
-      <div class="head">
-        <span> Home </span>
-        <span> About </span>
-        <span> Courses </span>
-        <span> IDE </span>
-        <span> Fees </span>
-      </div>
-
-      <div class="head">
-        <p> +91-8461944038 </p>
-        <button> Student Login </button>
+    <header>
+      <div class="bg-primary p-3 text-center">
+        <h2 class="text-light">Institute Registration Form</h2>
       </div>
     </header>
 
-    <div id="main">
+    <main>
+      <div class="container my-4 p-5 bg-info-subtle rounded border shadow w-50">
+        <form id="registrationFrom" >
+          <section class="bg-white p-3 rounded-5 border mb-3">
+            <div class="p-2 mt-2">
+              <label for="fullName" class="form-label fw-bold">Full Name</label>
+              <input
+                type="text"
+                name="fullName"
+                id="fullName"
+                class="form-control"
+                placeholder="Rahul Kumar"
+              />
+              <span class="text-danger small" id="fullNameError"></span>
+            </div>
+            <div class="p-2 mt-2">
+              <label for="email" class="form-label fw-bold">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="rahulkumar@example.com"
+              />
+              <span class="text-danger small" id="emailError"></span>
+            </div>
+            <div class="p-2 mt-2">
+              <label for="phone" class="form-label fw-bold"
+                >Mobile Number</label
+              >
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                class="form-control"
+                placeholder="9876543210"
+              />
+              <span class="text-danger small" id="phoneError"></span>
+            </div>
+            <div class="p-2 mt-2">
+              <label for="dob" class="form-label fw-bold">Date of Birth</label>
+              <input
+                type="date"
+                name="dob"
+                id="dob"
+                class="form-control"
+                placeholder="Rahul Kumar"
+              />
+              <span class="text-danger small" id="dobError"></span>
+            </div>
+            <div class="p-2 mt-2 d-flex gap-5">
+              <label for="gender" class="form-label fw-bold">Gender</label>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  value="male"
+                  class="form-switch"
+                />
+                <span>Male</span>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="female"
+                  class="form-switch"
+                />
+                <span>Female</span>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  id="others"
+                  value="others"
+                  class="form-switch"
+                />
+                <span>Others</span>
+              </div>
+              <span class="text-danger small" id="dobError"></span>
+            </div>
+          </section>
+[15-05-2026 18:24] Aman Bhaiya FSD-6 RICR: <section class="bg-white p-3 rounded-5 border mb-3">
+            <div class="p-2 mt-2">
+              <label for="qualification" class="form-label fw-bold"
+                >Last Completed Qualification</label
+              >
+              <select
+                name="qualification"
+                id="qualification"
+                class="form-select"
+              >
+                <option value="">Select Qualification</option>
+                <option value="10">Matriculation</option>
+                <option value="12">Intermediate</option>
+                <option value="diploma">Diploma</option>
+                <option value="UG">Graduation</option>
+                <option value="PG">Post Graduation</option>
+              </select>
+              <span class="text-danger small" id="qualificationError"></span>
+            </div>
+            <div class="p-2 mt-2">
+              <label for="marks" class="form-label fw-bold"
+                >Percentage/Grade</label
+              >
+              <input
+                type="text"
+                name="marks"
+                id="marks"
+                class="form-control"
+                placeholder="90% or A-F"
+              />
+              <span class="text-danger small" id="marksError"></span>
+            </div>
+          </section>
 
-    <center>
-    <h1> Enquiry Form </h1> <br>
-    <p>
-        Have questions or need assistance? Fill out the form below to connect with our team and explore your opportunities.
-    </p>
-    </center>
+          <section class="bg-white p-3 rounded-5 border mb-3">
+            <div class="p-2 mt-2">
+              <label for="course" class="form-label fw-bold"
+                >Preferred Course</label
+              >
+              <select name="course" id="course" class="form-select">
+                <option value="">Select Course</option>
+                <option value="iitJee">IIT-JEE</option>
+                <option value="neet">NEET</option>
+                <option value="bankingExams">Banking Exams</option>
+                <option value="ca/cs">CA/CS</option>
+                <option value="upsc">UPSC</option>
+              </select>
+              <span class="text-danger small" id="courseError"></span>
+            </div>
+            <div class="p-2 mt-2 d-flex gap-5 align-items-center">
+              <label for="timings" class="form-label fw-bold"
+                >Batch Timing Preference</label
+              >
+              <div class="d-flex gap-2">
+                <input
+                  type="checkbox"
+                  name="timings"
+                  id="morning"
+                  value="morning"
+                  class="form-check"
+                />
+                <span>Morning</span>
+              </div>
+              <div class="d-flex gap-2">
+                <input
+                  type="checkbox"
+                  name="timings"
+                  id="evening"
+                  value="evening"
+                  class="form-check"
+                />
+                <span>Evening</span>
+              </div>
+              <div class="d-flex gap-2">
+                <input
+                  type="checkbox"
+                  name="timings"
+                  id="afternoon"
+                  value="afternoon"
+                  class="form-check"
+                />
+                <span>AfterNoon</span>
+              </div>
+              <div class="d-flex gap-2">
+                <input
+                  type="checkbox"
+                  name="timings"
+                  id="weekends"
+                  value="weekends"
+                  class="form-check"
+                />
+                <span>Weekends</span>
+              </div>
+              <span class="text-danger small" id="timingsError"></span>
+            </div>
+          </section>
+[15-05-2026 18:24] Aman Bhaiya FSD-6 RICR: <section class="bg-white p-3 rounded-5 border mb-3">
+            <div class="p-2 mt-2">
+              <label for="address" class="form-label fw-bold">Address</label>
+              <textarea
+                name="address"
+                id="address"
+                class="form-control"
+                placeholder="123, Main Street"
+              ></textarea>
+              <span class="text-danger small" id="addressError"></span>
+            </div>
+            <div class="p-2 mt-2">
+              <label for="city" class="form-label fw-bold">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                class="form-control"
+                placeholder="Delhi"
+              />
+              <span class="text-danger small" id="cityError"></span>
+            </div>
+            <div class="p-2 mt-2">
+              <label for="pin" class="form-label fw-bold">Pin Code</label>
+              <input
+                type="text"
+                name="pin"
+                id="pin"
+                class="form-control"
+                placeholder="110001"
+              />
+              <span class="text-danger small" id="pinError"></span>
+            </div>
+          </section>
+ <section class="bg-white p-3 rounded-5 border mb-3">
+            <div class="p-2 mt-2">
+              <label for="gDfullName" class="form-label fw-bold"> Guardian’s Full Name:</label>
+              <input
+                type="text"
+                name="gDfullName"
+                id="gDfullName"
+                class="form-control"
+                placeholder="Rahul Kumar"
+              />
+              <span class="text-danger small" id="gDfullNameError"></span>
+            </div>
+            
+            <div class="p-2 mt-2">
+              <label for="gDphone" class="form-label fw-bold"
+                > Guardian’s Contact Number</label
+              >
+              <input
+                type="number"
+                name="gDphone"
+                id="gDphone"
+                class="form-control"
+                placeholder="9876543210"
+              />
+              <span class="text-danger small" id="gDphoneError"></span>
+            </div>
+           
+          </section>
+          <section class="bg-white p-3 rounded-5 border mb-3">
+            <div class="p-2 mt-2">
+              <label for="course" class="form-label fw-bold"
+                > How did you hear about us?</label
+              >
+              <select name="course" id="course" class="form-select">
+                <option value="">Select options</option>
+                <option value="Friends"> Friends</option>
+                <option value="OnlineAd">Online Ad</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Socialmedial">Social Media</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="text-danger small" id="courseError"></span>
+            </div>
+            <label for="course" class="form-label fw-bold"
+                > Feedback</label
+              >
+              <textarea name="SpecialRequirement" id="SR" class="form-control" placeholder="N/A"></textarea>
+          </section>
+          
+          <div class="d-flex justify-content-evenly">
+            <button type="reset" class="btn btn-danger">Clear</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
 
-    <br><br>
-
-    <div id="personalDeatails">
-        <div class="personal1">
-        <label> Person Name* </label>
-        <input type="text" placeholder="Person Name"> <br>
-
-        <label> Contact Number* </label>
-        <input type="text" placeholder="Contact Number">
-        </div>
-
-        <div class="personal2"> 
-        <label> Email* </label>
-        <input type="email" placeholder="Email"> <br>
-     
-        <label> Qualification* </label>
-        <select>
-            <option> --Select-- </option>
-            <option> 10th Pass </option>
-            <option> 12th Pass </option>
-            <option> School </option>
-            <option> College </option>
-            <option> Other </option>
-        </select>
-        </div>
-    </div>
-
-   
-
-    <div id="eduDetails">
-
-        <div class="clgName">
-        <label> College/School Name* </label>  <br><br>
-        <input type="text" placeholder="College/School Name">
-        </div>
-   
-        <div class="eduDetailsInnerDiv">
-        <label> Year </label> <br><br>
-        <select>
-        <option> Year </option> <br><br>
-        <option> 1st Year </option>
-        <option> 2nd Year </option>
-        <option> 3rd Year </option>
-        <option> 4th Year </option>
-        </select>
-   
-        <label> Branch* </label> <br><br>
-        <select>
-        <option> --Select-- </option>
-        <option> CSE - AIML </option>
-        <option> CSE Core </option>
-        <option> CSR - AIDS </option>
-        <option> EC </option>
-        <option> Mechanical </option>
-        </select> 
-        </div> 
-   </div> educationDetails id wala div 
-
-    <div id="otherDiv">
-
-    <div class="course">
-    <label> Interested in Which Course* </label> <br>
-    <label> <input type="checkbox"> Full Stack Web Development </label> <br>
-    <label> <input type="checkbox"> Data Science with Python </label> <br>
-    <label> <input type="checkbox"> Data Analytics with Python </label> <br>
-    <label> <input type="checkbox"> Business Analyst </label> <br>
-    <label> <input type="checkbox"> Java Programming </label> <br>
-    <label> <input type="checkbox"> Python Programming </label> <br>
-    <label> <input type="checkbox"> C/C++ Programming </label> <br>
-    <label> <input type="checkbox"> Other </label> <br>
-    </div> 
-
-    <div class="sourceofInfo">
-    <label> Source of Information <br> (Only Choose "Recieved call from institue" if you actually got a call from us) </label> <br>
-    <select>
-        <option> Source of Information </option>
-        <option> Google </option>
-        <option> Friend </option>
-        <option> Insta </option>
-        <option> Other </option>
-    </select>
-    </div> 
-    <br><br>
-
-    <label> Name of Executive* </label> <br>
-    <select>
-        <option> Name of Executive </option>
-        <option> Executive 1 </option>
-        <option> Executive 2 </option>
-    </select>
-    </div> 
-    
- 
-    <button type="submit"> Submit </button>
-
-    </div>  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Jo bhi kch likhoge iske upar hee likhna , neecha nhi likhna glti se bhi -->
-    <!-- BootStrap Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
