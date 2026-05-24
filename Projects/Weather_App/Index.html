@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke App Mini Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="Weather_App_File.CSS" />
+  </head>
+  <body>
+    <header class="bg-primary text-light p-3 text-center">
+      <h1>☁️☀️⛅ Weather App ☁️☀️⛅</h1>
+    </header>
+
+    <div class="container border p-3 rounded mt-4">
+      <input type="text" id="cityName" class="w-100" />
+      <div class="d-flex justify-content-center mt-3">
+        <button onclick="getWeather()" class="d-flex text-center">
+          Get Weather
+        </button>
+      </div>
+      <br />
+
+      <div class="mt-1 text-center">
+        <label> Temp : <span id="Temperature"> 00 </span> ºC </label>
+      </div>
+    </div>
+
+    <!-- Jo bhi kch likhoge iske upar hee likhna , neecha nhi likhna glti se bhi -->
+    <!-- BootStrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Weather_App_Script.JS"></script>
+  </body>
+</html>
