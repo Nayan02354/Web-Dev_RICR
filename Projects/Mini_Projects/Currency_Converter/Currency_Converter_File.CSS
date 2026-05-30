@@ -1,0 +1,45 @@
+#main
+{
+    border: 2px solid #7c4dff;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.cont
+{
+    min-height: 150px;
+}
+
+.flag-box img
+{
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.form-select,
+.form-control
+{
+    height: 50px;
+    font-size: 18px;
+}
+
+.swap-btn
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#main
+{
+    background-image: url("Curr bg img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 15px;
+    padding: 40px;
+    min-height: 350px;
+}
