@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaStore } from "react-icons/fa6";
 
 const Header = () => {
   return (
     <>
       <div className="bg-blue-500 flex justify-between p-3 ">
-        <div>
-          <h4>Fake Store</h4>
-        </div>
+        <FaStore className="text-3xl" />
+
         <div className="flex gap-5 ">
           <Link to={"/"} className="text-white hover:underline">
             Home
