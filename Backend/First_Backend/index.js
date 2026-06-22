@@ -2,13 +2,18 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-// Express
-import express from "express";
-
 // Object
 const app = express();
 
-// API
+// Express
+import express from "express";
+import AuthRouter from "./src/routers/auth.route.js";
+import PublicRouter from "./src/routers/public.route.js";
+
+app.use("/auth", AuthRouter);
+app.use("/public", PublicRouter);
+
+// Default API
 
 // app.get("/", (req, res) => {
 //   console.log("Server Started");
@@ -18,10 +23,6 @@ const app = express();
 app.get("/", (req, res) => {
   console.log(" Default Get API hit");
   res.json({ message: "Welcome to my First Backend Project" });
-});
-
-app.post("/login", (req, res) => {
-  res.json({ message: "Login Sucessfull" })
 });
 
 // Process ki help se Environment varibales access kar skte h
