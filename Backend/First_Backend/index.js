@@ -27,6 +27,14 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to my First Backend Project" });
 });
 
+// Default Error Handler
+app.use((err, req, res, next) => {
+  const errMessage = err.message || "Internal Server Error";
+  const errStatusCode = error.statusCode || 500;
+
+  res.status(errStatusCode).json({ message: errMessage });
+});
+
 // Process ki help se Environment varibales access kar skte h
 const port = process.env.PORT || 5000;
 
